@@ -1,3 +1,88 @@
-baseURL: http://example.org/
+baseURL:
 languageCode: en-us
-title: My New Hugo Site
+title: gomaso.io
+theme: PaperMod
+
+# menu
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 1
+    - identifier: about
+      name: About
+      url: '/about/'
+      weight: 10
+    - identifier: list
+      name: Blog
+      url: '/blog/'
+      weight: 20
+    - identifier: categories
+      name: Categories
+      url: '/categories/'
+      weight: 30
+    - identifier: search
+      name: 'Search'
+      pre: <i class="fa fa-search"></i>
+      url: /search/
+      weight: 60
+
+params:
+  # search
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ['title', 'permalink', 'summary', 'content']
+  # profile
+  profileMode:
+    enabled: true
+    title: 'Mosawer Mahboob' # optional default will be site title
+    subtitle: 'self-taught • golang • python • blockchain'
+    imageUrl: img/my_img.jpg # optional
+    imageTitle: 'my image' # optional
+    imageWidth: 120 # custom size
+    imageHeight: 120 # custom size
+    buttons:
+      - name: Let's Network
+        url: 'https://google.com'
+  socialIcons: # optional
+    - name: Github
+      url: 'https://github.com'
+    - name: Stackoverflow
+      url: 'https://stackoverflow.com'
+    - name: Instagram
+      url: 'https://instagram.com'
+    - name: Discord
+      url: 'https://discord.com'
+
+  # posts
+
+  # author
+  author: ['Mosawer Mahboob']
+
+  # post share button
+  ShowShareButtons: true
+
+  # show reading time
+  ShowReadingTime: true
+
+  # breadcrumbs
+  ShowBreadCrumbs: true
+
+  # post suggestion
+  ShowPostNavLinks: true
+
+  # copy code button
+  ShowCodeCopyButtons: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
+
