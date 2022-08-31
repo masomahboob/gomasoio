@@ -29,6 +29,10 @@ menu:
       weight: 60
 
 params:
+  env: production
+
+  defaultTheme: dark
+
   # search
   fuseOpts:
     isCaseSensitive: false
@@ -43,7 +47,7 @@ params:
     enabled: true
     title: 'Mosawer Mahboob' # optional default will be site title
     subtitle: 'self-taught • golang • python • blockchain'
-    imageUrl: img/my_img.jpg # optional
+    imageUrl: my_img.jpg # optional
     imageTitle: 'my image' # optional
     imageWidth: 120 # custom size
     imageHeight: 120 # custom size
