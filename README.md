@@ -1,2 +1,0 @@
-# gomasoio
-Personal Portfolio Website.
